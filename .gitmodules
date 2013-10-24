@@ -13,3 +13,6 @@
 [submodule "dependencies/parse-ecma"]
 	path = dependencies/parse-ecma
 	url = https://github.com/mattbierner/parse-ecma.git
+[submodule "dependencies/atum"]
+	path = dependencies/atum
+	url = https://github.com/jackal-js/atum.git
