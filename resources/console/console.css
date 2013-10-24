@@ -1,0 +1,320 @@
+/* 
+    Document   : console
+    Created on : Oct 22, 2013, 9:38:42 PM
+    Author     : TerryChen
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+        
+body {
+    font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ui-nav {
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    background-color: #563d7c;
+    border-color: #463265;
+    box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+
+.ui-nav .navbar-brand {
+    color: ghostwhite;
+    font-size: 2.0em;
+}
+
+.ui-nav .navbar-nav > li > a {
+    color: #cdbfe3;
+    font-size: 1.3em;
+}
+
+.btn-controls .debugging {
+    float: right;
+}
+
+.btn-controls{
+    border-bottom: 1px solid lightgray;
+    width:100%;
+    position: absolute;
+    top: 0;
+}
+
+.btn-controls .btn-group button {
+    border: 0;
+}
+        
+#page-header {
+            
+}
+        
+#page-title {
+    position: absolute;
+    margin: 0 0.25em;
+    padding: 0;
+    font-size: 1.6em;
+    float: left;
+}
+        
+#container {
+    box-sizing: border-box;
+    min-height: 500px;
+    min-width: 800px;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.pane {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+        
+.pane-header {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+        
+.pane-title {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.2em;
+    color: black;
+    padding: 0 0.25em;
+}
+
+.ui-layout-resizer {
+    border: 0;
+}
+        
+#input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 19px;
+}
+        
+#input .CodeMirror {
+    height: 100%;
+}
+         
+#input .CodeMirror-scroll {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.console .workspace {
+    width: auto;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+        
+.console .workspace .controls {
+    border-top: 1px solid lightgray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+        
+.console .workspace .run-buttons > *,
+.console .workspace .debug-buttons > * {
+    display: block;
+    padding: 0 1em;
+    font-size: 0.90em;
+}
+        
+.console .workspace .run-buttons {
+    float: right;
+}
+        
+.console .workspace .run-buttons > * {
+    float: right;
+    /*border-left: 1px solid gray;*/
+}
+        
+.console .workspace .debug-buttons {
+    float: left;
+}
+
+.console .workspace .debug-buttons > * {
+    float: left;
+    border-right: 1px solid gray;
+}
+        
+.ui-widget {
+    font:inherit;
+}
+        
+.ui-corner-all {
+    border-radius: 0;
+}
+        
+.ui-button {
+    color: black;
+    border: 0;
+    background: transparent;
+    margin: 0;
+    border: 0;
+}
+        
+.ui-button.ui-state-hover .ui-icon {
+    opacity: 0.50;
+}
+        
+.ui-button-text-only .ui-button-text {
+    padding: 0.1em 0.25em;
+}
+        
+.ui-state-default .ui-icon {
+    background-image: url(resources/jquery-ui-1.10.3/css/ui-lightness/images/ui-icons_222222_256x240.png);
+}
+        
+button {
+
+}
+        
+.output-error {
+    color: red;
+}
+        
+.output-value {
+        
+}
+        
+#text_out {
+    padding: 0;
+    margin: 0;
+}
+        
+.code {
+    font-family: Courier New, monospace;
+}
+
+/* Call Stack */
+
+.callstack {
+    overflow-y: scroll;
+}
+
+/* Environments */
+.environments {
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+        
+.environment {
+    list-style: none;
+    border-bottom: 1px solid gray;
+}
+
+.binding-list {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+        
+.binding-list > .binding {
+    margin-bottom: 0.25em;
+}
+        
+.binding {
+    list-style: none;
+    font-size: 0.90em;
+    font-weight: normal;
+    line-height: 100%;
+}
+        
+.binding .binding-name {
+    font-weight: bold;
+}
+        
+.binding .binding-value {
+    margin-left: 0.15em;
+}
+        
+.workspace {
+    height: 60%;
+}
+        
+.output {
+    position: relative;
+    height: 40%;
+}
+        
+#output-console {
+    box-sizing: border-box;
+    height: 100%;
+    padding-bottom: 18px;
+    overflow-y: scroll;
+    list-style: none;
+    margin: 0;
+}
+        
+.output-interactive {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid red;
+}
+        
+.output-interactive-textarea {
+    overflow-y: hidden;
+    background: red;
+}
+        
+.output-interactive-textarea .CodeMirror-hscrollbar {
+    display: none;
+}
+        
+.object-browser {
+    font-size: 1em;
+}
+        
+.object-children > .object-value {
+    display: inline-block;
+}
+        
+.ui-accordion-header,
+.ui-accordion .ui-accordion-header {
+    color: black;
+    border: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+        
+.ui-accordion  .ui-accordion-content {
+    border: none;
+    background: none;
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+}       
+        
+/* CodeMirror*/
+.CodeMirror {
+    background: transparent;
+}
+        
+/* From http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+        
+.cf:after {
+    clear: both;
+}
+

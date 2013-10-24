@@ -1,0 +1,17 @@
+{
+  "name": "atum",
+  "version": "0.0.0",
+  "description": "Functional Javascript Interpreter",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mattbierner/atum.git"
+  },
+  "keywords": [
+    "javascript", 
+    "functional",
+    "interpreter"
+  ],
+  "author": "Matt Bierner",
+  "license": "MIT"
+}
