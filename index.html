@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jackalApp">
+    <head>
+        <title>Home page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link type="text/css" rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css" />
+        <link type="text/css" rel="stylesheet" href="/resources/bootstrap/css/bootstrap.min.css" />
+        
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        
+            body {
+                font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            
+            .ui-nav {
+                text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+                background-color: #563d7c;
+                border-color: #463265;
+                box-shadow: 0 1px 0 rgba(255,255,255,.1);
+            }
+
+            .ui-nav .navbar-brand {
+                color: ghostwhite;
+                font-size: 2.0em;
+            }
+
+            .ui-nav .navbar-nav > li > a {
+                color: #cdbfe3;
+                font-size: 1.3em;
+            }
+        </style>
+    </head>
+    <body ng-controller="DatabaseCtrl">
+        <div class="navbar navbar-inverse navbar-static-top ui-nav">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Jackal</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- TODO: temporary  -->
+                        <li ng-hide="user"><a ng-click="login()">Login</a></li>
+                        <li ng-show="user"><a href="profile.html">Welcome, {{user.name}}!</a></li>
+                        <li ng-show="user"><a ng-click="logout()" style="font-size: 1em;">Log out</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script type="application/javascript" src="/resources/bootstrap/js/jquery.js" ></script>
+        <script type="application/javascript" src="/resources/bootstrap/js/bootstrap.js" ></script>
+        
+        <script type="application/javascript" src="/resources/server/angular.js"></script>
+        <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+	<script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
+	<script src='https://cdn.firebase.com/libs/angularfire/0.3.0/angularfire.min.js'></script>
+        <script type="application/javascript" src="/resources/server/app.js"></script>
+    </body>
+</html>
